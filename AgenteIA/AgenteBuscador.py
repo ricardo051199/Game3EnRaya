@@ -1,15 +1,5 @@
-#################################################################
-# Nombre      : Agente Buscador                                 #
-# Version     : 0.05.03.2017                                    #
-# Autor       : Victor                                          #
-# Descripcion : Clase especificacion de Agente, implementa      #
-#               algoritmos de busqueda                           #
-##################################################################
-
-
 from AgenteIA.Agente import Agente
 from copy import deepcopy
-
 
 class AgenteBuscador(Agente):
 

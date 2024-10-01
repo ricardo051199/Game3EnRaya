@@ -21,5 +21,5 @@ class Tablero(Entorno):
         self.juegoActual = agente.getResultado(self.juegoActual, agente.acciones)
         agente.mostrar(self.juegoActual)
         print("Utilidad ", agente.estado.get_utilidad)
-        agente.vive = False
+        agente.vive = True
 

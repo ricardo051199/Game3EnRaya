@@ -4,7 +4,6 @@ from HumanoTresEnRaya import HumanoTresEnRaya
 
 luis = AgenteTresEnRaya()
 juan = HumanoTresEnRaya()
-# juan = AgenteTresEnRaya()
 
 tablero = Tablero()
 

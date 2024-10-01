@@ -1,7 +1,6 @@
 from AgenteIA.AgenteJugador import AgenteJugador
 from AgenteIA.AgenteJugador import ElEstado
 
-
 class AgenteTresEnRaya(AgenteJugador):
 
     def __init__(self, h=3, v=3, k=3):

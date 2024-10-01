@@ -1,12 +1,4 @@
-#################################################################
-# Nombre      : Entorno                                         #
-# Version     : 0.05.03.2017                                    #
-# Autor       : Victor                                          #
-# Descripcion : Clase abstracta para modelar entorno            #
-##################################################################
-
 from AgenteIA.Agente import Agente
-
 
 class Entorno(object):
 

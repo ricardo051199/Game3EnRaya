@@ -1,13 +1,4 @@
-#################################################################
-# Nombre      : Agente PSR                                      #
-# Version     : 0.05.03.2017                                    #
-# Autor       : Victor                                          #
-# Descripcion : Clase especificacion de Agente, implementa      #
-#               algoritmos Backtrack para PSR                   #
-#################################################################
-
 from AgenteIA.Agente import Agente
-
 
 class AgentePSR(Agente):
 

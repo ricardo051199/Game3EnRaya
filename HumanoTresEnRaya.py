@@ -1,6 +1,5 @@
 from AgenteTresEnRaya import AgenteTresEnRaya
 
-
 class HumanoTresEnRaya(AgenteTresEnRaya):
     def __init__(self):
         AgenteTresEnRaya.__init__(self)
