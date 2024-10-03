@@ -20,7 +20,7 @@ class Entorno(object):
     def avanzar(self):
         # ejecuta el entorno un paso en el tiempo.
         # Si hay interacciones entre ellos, sobrescribir este metodo
-      
+    
         if not self.finalizado():
             for agente in self.agentes:
                 self.percibir(agente)

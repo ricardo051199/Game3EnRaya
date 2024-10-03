@@ -8,6 +8,7 @@ class AgenteTresEnRaya(AgenteJugador):
         self.h = h
         self.v = v
         self.k = k
+        self.altura = max(v, h)
 
     def jugadas(self, estado):
         return estado.movidas
@@ -44,8 +45,8 @@ class AgenteTresEnRaya(AgenteJugador):
                 self.en_raya(tablero, m, jugador, (1, -1)) or
                 self.en_raya(tablero, m, jugador, (1, 1))):
             return +1 if jugador == 'X' else -1
-        else:
-            return 0
+        return 0  # Utilidad neutra si nadie ha ganado
+
 
     def en_raya(self, tablero, m, jugador, delta_x_y):
         (delta_x, delta_y) = delta_x_y

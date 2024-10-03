@@ -9,17 +9,27 @@ class Tablero(Entorno):
         movidas = [(x, y) for x in range(1, h + 1) for y in range(1, v + 1)]
         self.juegoActual = ElEstado(jugador='X', get_utilidad=0, tablero={}, movidas=movidas)
 
-    def percibir(self, agente):
+    def percibir(self, agente):            
         agente.estado = self.juegoActual
         if agente.estado.movidas:
             agente.programa()
         if agente.testTerminal(agente.getResultado(self.juegoActual, agente.acciones)):
-            agente.vive = False
+            for a in self.agentes:
+                a.inhabilitar()
 
     def ejecutar(self, agente):
         print("Agente ", agente.estado.jugador, " juega ", agente.acciones)
         self.juegoActual = agente.getResultado(self.juegoActual, agente.acciones)
         agente.mostrar(self.juegoActual)
         print("Utilidad ", agente.estado.get_utilidad)
+        resul = self.juegoActual.get_utilidad
+        if resul != 0:
+            if resul > 0:
+                print("Victoria para X.")
+            else:
+                print("Victoria para O.")
+            exit()
         agente.vive = True
+
+
 
